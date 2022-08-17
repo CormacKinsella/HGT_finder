@@ -20,7 +20,7 @@ Prerequisite programmes in $PATH:
 - samtools
 - bedtools
 
-A conda environment.yml is provided in the repo for fast setup.
+A conda environment.yml is provided here for fast setup.
 Get conda here:
 https://docs.conda.io/en/latest/miniconda.html#linux-installers
 
@@ -28,7 +28,7 @@ Create, activate, and check environment:
 ```
 conda EVE_discovery create -f environment.yml
 conda activate EVE_discovey
-conda env list
+conda list
 ```
 
 The workflow itself is provided as a Linux command line script for use on a HPC environment. Adapt this to your system, e.g.:
