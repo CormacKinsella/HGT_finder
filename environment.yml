@@ -1,0 +1,10 @@
+name: EVE_discovery
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - blast
+  - samtools
+  - bedtools
+prefix: /project/kinsella/programmes/miniconda_local/envs/EVE_discovery
