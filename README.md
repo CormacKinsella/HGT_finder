@@ -4,7 +4,7 @@ Linux workflow for processing 100s or 1000s of genomes to discover EVEs.
 Read the paper here:
 
 Highlights:
-- No storage issues when processing 1000s of genomes. Using cressdnavirus queries, total output for ~25,000 eukaryotic genomes was **<5 GB.**
+- No storage issues when processing 1000s of genomes. Using cressdnavirus queries, total output for ~25,000 eukaryotic genomes was <2 GB.
 - Custom protein queries can be used to target any virus/EVE lineage.
 - Each element represents a region of interest (ROI) in the assemmbly. ROIs are likely to get multiple alignments. This workflow first merges overlapping alignments to define the maximal ranges of a ROI, before reanalysing each individually to extract the best predicted protein sequence.
 - Older EVEs often contain stop codons. These are retained in the final .fmt6 output, as they are potentially informative. Ensure they are removed prior to phylogenetic analysis, or BLAST curation of sequences. 
