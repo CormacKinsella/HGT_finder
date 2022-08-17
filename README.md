@@ -3,7 +3,8 @@
 ![EVE2_Grid1_Spot1_120k_scale-01](https://user-images.githubusercontent.com/27350062/185241664-aa96486b-e61e-423e-9264-c3fbd7d8625b.jpg)
 
 ## Linux workflow for processing 100s or 1000s of genomes to discover EVEs. 
-## Read the paper here:
+
+Read the paper here:
 # insert_link 
 
 # Highlights:
