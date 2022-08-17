@@ -1,5 +1,7 @@
 # Tree of life EVE discovery
 
+![image](https://user-images.githubusercontent.com/27350062/185176741-ebfc5017-6287-4ccb-98ed-c1acea3e5385.png)
+
 For processing 100s or 1000s of genomes to discover EVEs. 
 
 - No storage issues: assemblies are not retained locally. Using cressdnaviruses, total output for ~25,000 eukaryotic genomes is <5 GB.
