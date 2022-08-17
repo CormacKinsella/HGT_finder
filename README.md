@@ -1,7 +1,7 @@
 # Tree of life EVE discovery
 
 Linux workflow for processing 100s or 1000s of genomes to discover EVEs. 
-Read the paper:
+Read the paper here:
 
 Highlights:
 - No storage issues for 1000s of genomes: assemblies are not retained locally. Using cressdnaviruses, total output for ~25,000 eukaryotic genomes is <5 GB.
