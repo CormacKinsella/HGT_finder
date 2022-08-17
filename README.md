@@ -16,15 +16,15 @@ diamond blastp --very-sensitive --query queries.aa.fa --db nr --unal 1 --max-tar
 # Usage:
 
 Prerequisite programmes in $PATH:
-BLAST+
-samtools
-bedtools
+- BLAST+
+- samtools
+- bedtools
 
 A conda environment.yml is provided in the repo for fast setup.
 Get conda here:
 https://docs.conda.io/en/latest/miniconda.html#linux-installers
 
-Create, activate, and check environment
+Create, activate, and check environment:
 ```
 conda EVE_discovery create -f environment.yml
 conda activate EVE_discovey
