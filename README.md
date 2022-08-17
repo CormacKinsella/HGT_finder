@@ -2,9 +2,9 @@
 
 ![EVE2_Grid1_Spot1_120k_scale-01](https://user-images.githubusercontent.com/27350062/185241664-aa96486b-e61e-423e-9264-c3fbd7d8625b.jpg)
 
-Linux workflow for processing 100s or 1000s of genomes to discover EVEs. 
-Read the paper here:
-#LINK
+## Linux workflow for processing 100s or 1000s of genomes to discover EVEs. 
+## Read the paper here:
+# insert_link 
 
 # Highlights:
 
@@ -70,4 +70,4 @@ diamond blastp --very-sensitive --query pEVE_queries.faa --db nr --unal 1 --max-
 # Banner image details:
 
 Virus-like particles expressed from an endogenous viral element (family *Naryaviridae* or *Nenyaviridae*) in *Entamoeba dispar* contig AANV02000527.1. 
-Credit to Tim Passchier, who ran the negative stain microscopy and taught me how to express viral proteins in *E. coli*!
+Credit to Tim Passchier who ran the negative stain microscopy.
