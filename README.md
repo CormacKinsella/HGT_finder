@@ -39,8 +39,14 @@ $outdir
 
 # Required input files:
 - Custom protein queries in a file with ".fasta" extension.
-- A text list of ftp repositories to target, for example: 
-EXAMPLE
+- A text list of ftp repositories to target, for example:
+```
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/108/235/GCA_014108235.1_mMyoMyo1.p
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/016/865/085/GCA_016865085.1_ASM1686508v1
+ftp.ncbi.nlm.nih.gov/genomes/all/GCF/003/704/035/GCF_003704035.1_HU_Pman_2.1.3
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/913/844/085/GCA_913844085.1_s3r1_clone4_genome
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/662/575/GCA_001662575.1_ASM166257v1 
+```
 
 # Notes
 - For 200+ genomes, splitting up the input ftp list is recommended, with subsets run in parallel. 
