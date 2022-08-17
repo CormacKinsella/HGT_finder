@@ -1,6 +1,6 @@
 # Tree of life EVE discovery
 
-![image](https://user-images.githubusercontent.com/27350062/185176741-ebfc5017-6287-4ccb-98ed-c1acea3e5385.png)
+![image](https://user-images.githubusercontent.com/27350062/185176894-c5895241-b498-4a2e-9800-7ea5678780c5.png)
 
 For processing 100s or 1000s of genomes to discover EVEs. 
 
