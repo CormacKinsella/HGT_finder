@@ -32,10 +32,11 @@ conda list
 ```
 
 The workflow itself is provided as a Linux command line script for use on a HPC environment. Adapt this to your system, e.g.:
-Workload manager information
-Input file locations
-$num_threads
-$outdir
+- Workload manager information
+- Input file locations
+- $num_threads
+- $outdir
+- **$protein_query**
 
 # Required input files:
 - Custom protein queries in a file with ".fasta" extension. Recommend no spaces in headers & informative labelling. 
