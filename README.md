@@ -20,7 +20,7 @@ Prerequisite programmes in $PATH:
 - samtools
 - bedtools
 
-A conda environment.yml is provided here for fast setup.
+Alternatively, a conda environment.yml is provided here for fast setup.
 Get conda here:
 https://docs.conda.io/en/latest/miniconda.html#linux-installers
 
