@@ -23,9 +23,10 @@ max_downloads=5
 # Set number of threads to use
 thread_num=16
 
-#########################################################################
-
+# Set wd to compute node
 cd $TMPDIR
+
+#########################################################################
 
 # Start script
 
