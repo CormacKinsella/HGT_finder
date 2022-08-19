@@ -70,5 +70,4 @@ diamond blastp --very-sensitive --query pEVE_queries.faa --db nr --unal 1 --max-
 
 # Banner image details:
 
-Putative virus-like particles expressed from an endogenous viral element (family *Naryaviridae* or *Nenyaviridae*) in *Entamoeba dispar* contig AANV02000527.1. 
-Credit to Tim C. Passchier who ran the negative stain microscopy.
+Putative virus-like particles self-assembled from an expressed endogenous viral element (family *Naryaviridae* or *Nenyaviridae*) in *Entamoeba dispar* contig AANV02000527.1. Credit to Tim C. Passchier who ran the negative stain microscopy.
