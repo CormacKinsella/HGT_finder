@@ -4,9 +4,6 @@
 
 ## Linux workflow for processing 100s or 1000s of genomes to discover EVEs. 
 
-Read the paper here:
-# insert_link 
-
 # Highlights:
 
 - No storage issues when processing 1000s of genomes. Using cressdnavirus queries, total output for ~25,000 eukaryotic genomes was <2 GB.
