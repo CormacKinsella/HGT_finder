@@ -50,11 +50,12 @@ ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/662/575/GCA_001662575.1_ASM166257v1
 
 # Notes
 - For 200+ genomes, splitting up the input ftp list into multiple subfiles is recommended, with subsets run in parallel using copies of the script
-- First shuffle complete list: 
+- Sequential assembly accessions often have similar size (e.g. same organism submitted together), therefore shuffling ftp links will ensure a more similar work burden for each job
+- To shuffle the complete list: 
 ```
 shuf ftp.list > ftp_shuffled.list
 ```
-Sequential assembly accessions often have similar size, if they are submitted together, shuffling will ensure a more similar work burden and therefore runtime for each job.
+- Then split into smaller batches:
 ```
 split -l 100 ftp_shuffled.list
 ```
