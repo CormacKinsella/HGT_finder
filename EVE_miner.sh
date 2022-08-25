@@ -8,6 +8,10 @@
 #########################################################################
 # SET THESE PARAMETERS (N.B. $TMPDIR variable refers to compute node scratch space, adjust this to your system)
 
+# Activate conda environment
+eval "$(conda shell.bash hook)"
+conda activate EVE_discovery
+
 # FTP list
 cp /directory/ftp.list $TMPDIR
 
