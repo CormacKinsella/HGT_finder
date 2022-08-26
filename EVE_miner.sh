@@ -80,7 +80,7 @@ for i in *fmt6; do awk '$3>$2' $i > ${i}.bed; done
 for i in *fmt6; do awk '$2>$3' $i | awk 'BEGIN{OFS="\t"}; {print $1, $3, $2, $4, $5, $6, $7, $8, $9, $10, $11, $12}' >> ${i}.bed; done
 rm *fmt6
 
-# Creates merged BED of maximal strict alignment ranges
+# Creates merged BED of maximal strictly overlapping alignment ranges
 for i in *bed; do sort -k1,1 -k2,2n $i | bedtools merge > ${i}.strict_coord_merge; done
 
 # Creates merged BEDs, one allowing 1 kb between elements, and another allowing 1 kb between elements & appending up to 3 kb sequence context
