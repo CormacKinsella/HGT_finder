@@ -70,6 +70,6 @@ diamond blastp --very-sensitive --query pEVE_queries.faa --db nr --unal 1 --max-
 - For a small number of very repetitive assemblies (particularly wheats), tBLASTn can fail to finish
 - This appears to be an issue with simple-repeats, and masking these fixes the issue
 ```
-for i in *fna; do RepeatMasker -engine rmblast -pa 4 -noint -dir ./out $i; done
+for i in *fna; do RepeatMasker -engine rmblast -pa 4 -noint -species wheat -dir ./out $i; done
 ```
 - A list of assemblies with known issues can be found in the file "difficultAssemblies.txt"
