@@ -1,0 +1,17 @@
+# Problematic wheat assemblies, masking simple repeats fixed issue
+
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/903/993/975/GCA_903993975.1_10wheat_assembly_lancer
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/018/294/505/GCA_018294505.1_IWGSC_CS_RefSeq_v2.1
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/904/067/125/GCA_904067125.1_aegilops_longissima_6782_assembly
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/002/220/415/GCA_002220415.3_Triticum_4.0
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/904/066/035/GCA_904066035.1_10wheat_assembly_norin61
+ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/162/155/GCF_002162155.2_WEW_v2.1
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/014/338/645/GCA_014338645.1_ASM1433864v1
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/937/894/285/GCA_937894285.1_Triticum_aestivum_Renan_v2.1
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/021/605/145/GCA_021605145.1_ASM2160514v1
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/903/993/985/GCA_903993985.1_10wheat_assembly_arinaLrFor
+ftp.ncbi.nlm.nih.gov/genomes/all/GCA/903/994/185/GCA_903994185.1_10wheat_assembly_sy_mattis
+
+# Problematic bird assembly, masking poly-G tracts fixed the issue (did not test simple repeat masking, but this should also work)
+
+ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/247/815/GCF_000247815.1_FicAlb1.5
