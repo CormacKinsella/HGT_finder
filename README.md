@@ -66,10 +66,6 @@ split -l 100 ftp_shuffled.list
 diamond blastp --very-sensitive --query pEVE_queries.faa --db nr --unal 1 --max-target-seqs 1 --outfmt 6 qseqid sseqid pident length evalue bitscore stitle --out pEVE_queries.faa.diamond.fmt6 --threads 8
 ```
 
-# Problems with highly repetitive genome assemblies
+# Problems with large and highly repetitive genome assemblies
 - For a small number of very repetitive assemblies (particularly wheats), tBLASTn can fail to finish
-- This appears to be an issue with simple-repeats, and masking these fixes the issue
-```
-for i in *fna; do RepeatMasker -engine rmblast -pa 4 -noint -species wheat -dir ./out $i; done
-```
 - A list of assemblies with known issues can be found in the file "difficultAssemblies.txt"
