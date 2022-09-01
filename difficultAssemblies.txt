@@ -1,4 +1,4 @@
-# Problematic wheat assemblies, masking simple repeats fixed issue
+# Problematic wheat assemblies
 
 ftp.ncbi.nlm.nih.gov/genomes/all/GCA/903/993/975/GCA_903993975.1_10wheat_assembly_lancer
 ftp.ncbi.nlm.nih.gov/genomes/all/GCA/018/294/505/GCA_018294505.1_IWGSC_CS_RefSeq_v2.1
@@ -12,6 +12,6 @@ ftp.ncbi.nlm.nih.gov/genomes/all/GCA/021/605/145/GCA_021605145.1_ASM2160514v1
 ftp.ncbi.nlm.nih.gov/genomes/all/GCA/903/993/985/GCA_903993985.1_10wheat_assembly_arinaLrFor
 ftp.ncbi.nlm.nih.gov/genomes/all/GCA/903/994/185/GCA_903994185.1_10wheat_assembly_sy_mattis
 
-# Problematic bird assembly, masking poly-G tracts fixed the issue (did not test simple repeat masking, but this should also work)
+# Problematic bird assembly, masking poly-G tracts fixed the issue (did not test RepeatMasker simple repeat masking, but would probably also work)
 
 ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/247/815/GCF_000247815.1_FicAlb1.5
