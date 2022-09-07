@@ -63,7 +63,7 @@ split -l 100 ftp_shuffled.list
 - For best performance, work with all files within a compute environment/compute node
 - It's recommended to carry out quality control on the resulting sequences. E.g. with a DIAMOND installation:
 ```
-diamond blastp --very-sensitive --query pEVE_queries.faa --db nr --unal 1 --max-target-seqs 1 --outfmt 6 qseqid sseqid pident length evalue bitscore stitle --out pEVE_queries.faa.diamond.fmt6 --threads 8
+diamond blastp --very-sensitive --query queries.faa --db nr --unal 1 --max-target-seqs 20 --outfmt 6 qseqid sseqid pident length evalue bitscore stitle --out diamond.fmt6 --threads 8
 ```
 
 # Problems with large and highly repetitive genome assemblies
