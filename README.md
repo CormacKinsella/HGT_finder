@@ -67,5 +67,9 @@ diamond blastp --very-sensitive --query queries.faa --db nr --unal 1 --max-targe
 ```
 
 # Problems with large and highly repetitive genome assemblies
-- For a small number of very repetitive assemblies (particularly wheats), tBLASTn can fail to finish
+- For a small number of large and very repetitive assemblies (particularly wheats), tBLASTn can fail to finish in reasonable time
 - A list of assemblies with known issues can be found in the file "difficultAssemblies.txt"
+- Masking simple repeats with repeatmasker can help to reduce runtime
+```
+RepeatMasker -engine rmblast -pa 4 -noint -species wheat -dir ./out assembly.fna
+```
