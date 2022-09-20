@@ -1,7 +1,6 @@
 # Tree of life endogenous viral element (EVE) discovery
 
-![EVE2_Grid1_Spot1_120k_scale-01](https://user-images.githubusercontent.com/27350062/185241664-aa96486b-e61e-423e-9264-c3fbd7d8625b.jpg)
-Putative virus-like particles self-assembled from an expressed EVE (capsid protein associated with either Rep family *Naryaviridae* or *Nenyaviridae*) in *Entamoeba dispar* contig AANV02000527.1. Credit to Tim C. Passchier who ran the negative stain microscopy.
+
 
 ## Linux workflow for processing 100s to 1000s of genomes to discover EVEs
 
