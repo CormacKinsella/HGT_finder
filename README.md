@@ -1,6 +1,6 @@
 # Tree of life endogenous viral element (EVE) discovery
 
-<a href="url"><img src="https://user-images.githubusercontent.com/27350062/191242886-3d77985f-380e-4656-90ac-a9ed992357f1.png" align="middle" height="300" width="300" ></a>
+<a href="url"><img src="https://user-images.githubusercontent.com/27350062/191242886-3d77985f-380e-4656-90ac-a9ed992357f1.png" align="center" height="300" width="300" ></a>
 
 Alphafold2 predicted monomer structure of an endogenous viral capsid, in *Entamoeba dispar* contig AANV02000527.1 (associated with either the family *Naryaviridae* or the *Nenyaviridae*). Thanks to Tim C. Passchier who ran structure prediction. 
 
