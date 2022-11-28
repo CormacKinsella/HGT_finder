@@ -25,8 +25,8 @@ https://docs.conda.io/en/latest/miniconda.html#linux-installers
 
 Create, activate, and check environment:
 ```
-conda EVE_discovery create -f environment.yml
-conda activate EVE_discovey
+conda HGT_finder create -f environment.yml
+conda activate HGT_finder
 conda list
 ```
 
