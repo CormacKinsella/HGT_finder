@@ -1,4 +1,4 @@
-name: EVE_discovery
+name: HGT_finder
 channels:
   - conda-forge
   - bioconda
@@ -7,4 +7,4 @@ dependencies:
   - blast
   - samtools
   - bedtools
-prefix: /project/kinsella/programmes/miniconda_local/envs/EVE_discovery
+prefix: /project/kinsella/programmes/miniconda_local/envs/HGT_finder
