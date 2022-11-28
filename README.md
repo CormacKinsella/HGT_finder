@@ -1,8 +1,8 @@
-# Tree of life endogenous viral element (EVE) discovery
+# Horizontal gene transfer across virus realms and the tree of life
 
 ![banner2-01](https://user-images.githubusercontent.com/27350062/201880841-6cc0cf34-e26a-4d69-9c52-9fbf2c1d0cd6.png)
 
-## Linux workflow for processing 100s to 1000s of genomes to discover EVEs
+## Linux workflow for processing 1000s of genome assemblies to discover horizontal gene transfer, including endogenous viral elements
 
 # Highlights:
 
@@ -48,7 +48,7 @@ ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/662/575/GCA_001662575.1_ASM166257v1
 ```
 
 # Notes
-- For 200+ genomes, splitting up the input ftp list into multiple subfiles is recommended, with subsets run in parallel using copies of the script
+- For 200+ eukaryotic genome assemblies, splitting up the input ftp list into multiple subfiles is recommended, with subsets run in parallel using copies of the script
 - Sequential assembly accessions often have similar size (e.g. same organism submitted together), therefore shuffling ftp links will ensure a more similar work burden for each job
 - To shuffle the complete list: 
 ```
