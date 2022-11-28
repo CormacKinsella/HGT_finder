@@ -1,4 +1,4 @@
-# Horizontal gene transfer across virus realms and the tree of life
+# Horizontal gene transfer detection across the tree of life
 
 ![banner2-01](https://user-images.githubusercontent.com/27350062/201880841-6cc0cf34-e26a-4d69-9c52-9fbf2c1d0cd6.png)
 
