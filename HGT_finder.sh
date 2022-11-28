@@ -10,7 +10,7 @@
 
 # Activate conda environment
 eval "$(conda shell.bash hook)"
-conda activate EVE_discovery
+conda activate HGT_finder
 
 # FTP list
 cp /directory/ftp.list $TMPDIR
