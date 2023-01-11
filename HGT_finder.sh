@@ -14,6 +14,7 @@ conda activate HGT_finder
 
 # FTP list
 cp /directory/ftp.list $TMPDIR
+download_list=$TMPDIR/ftp.list
 
 # Protein queries
 cp /directory/proteins.fasta $TMPDIR
@@ -104,4 +105,4 @@ for i in *named; do mv $i ${i%.named}; rm ${i%d}; done
 mv *bed.gz *fas *coord_merge *fmt6 $outdir
 rm G*
 
-done < ftp.list
+done < $download_list
