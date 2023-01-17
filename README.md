@@ -1,15 +1,18 @@
-# Horizontal gene transfer detection across the tree of life
+# Horizontal gene transfer finder
 
 ![banner2-01](https://user-images.githubusercontent.com/27350062/201880841-6cc0cf34-e26a-4d69-9c52-9fbf2c1d0cd6.png)
 
-## Linux workflow for processing 1000s of genome assemblies to discover horizontal gene transfer, including endogenous viral elements
+## HGT detection workflow using custom protein queries - designed to process 100s or 1000s of genome assemblies
 
 # Highlights:
 
-- No storage issues when processing 1000s of genomes. Using cressdnavirus queries, total output for ~25,000 eukaryotic genomes was <2 GB
-- Custom protein queries can be used to target any virus/EVE lineage
-- Each element represents a region of interest (ROI) in the assembly. ROIs are likely to get multiple distinct alignments. This workflow first merges overlapping alignments to record the maximal ranges of a ROI, before extracting the predicted protein sequence of the best single alignment (unlikely to span the maximal ranges)
-- Older EVEs often contain stop codons. These are retained in the final ".fmt6" output, as they are potentially informative. Ensure they are removed prior to phylogenetic analysis, or BLAST curation of sequences
+- Custom protein queries are used to identify any type of HGT event, e.g. virus-eukaryote (endogenous virus elements or EVEs), virus-virus (gene capture), or others. 
+- Designed for processing 1000s of genomes (handles corrupted downloads, and manages disk storage by sequential file processing and cleanup)
+
+# Rationale of the workflow:
+
+- Each HGT-derived element represents a region of interest (ROI) in a genome assembly. ROIs are likely to have multiple distinct alignments when a broad protein query database is used. The workflow first merges overlapping alignments to record the maximal ranges of a ROI, before extracting the predicted protein sequence of the best single alignment (unlikely to span the maximal ranges)
+- When used for detecting EVEs, older elements often contain stop codons. These are retained in the final ".fmt6" output, as they are potentially informative. Ensure they are removed prior to phylogenetic analysis, or Diamond/BLAST curation of sequences
 - Information such as assembly, contig, maximal ROI ranges, putative EVE amino acid sequence, frame, and exact sequence coordinates are straightforward to extract or calculate from outputs
 
 # Usage:
@@ -48,21 +51,16 @@ ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/662/575/GCA_001662575.1_ASM166257v1
 ```
 
 # Notes
-- For 200+ eukaryotic genome assemblies, splitting up the input ftp list into multiple subfiles is recommended, with subsets run in parallel using copies of the script
-- Sequential assembly accessions often have similar size (e.g. same organism submitted together), therefore shuffling ftp links will ensure a more similar work burden for each job
-- To shuffle the complete list: 
+- When processing large numbers of eukaryotic genome assemblies, splitting the workload across multiple jobs is recommended to improve runtime
+- Sequential assembly accessions often have similar size (e.g. same organism submitted as a batch of assemblies), therefore shuffling ftp links will ensure a more similar work burden between jobs
 ```
-shuf ftp.list > ftp_shuffled.list
+shuf ftp.list | split -l 100
 ```
-- Then split into smaller batches:
-```
-split -l 100 ftp_shuffled.list
-```
-- Approximate run time (Intel® Xeon® Gold 6130 - 2.10GHz, 16 cores): 100 eukaryotic genomes in 1-2 days
+- Approximate run time (Intel® Xeon® Gold 6130 - 2.10GHz, 16 cores): 100 eukaryotic genomes in <1 day (N.B. highly dependent on taxon of interest)
 - For best performance, work with all files within a compute environment/compute node
 - It's recommended to carry out quality control on the resulting sequences. E.g. with a DIAMOND installation:
 ```
-diamond blastp --very-sensitive --query queries.faa --db nr --unal 1 --max-target-seqs 20 --outfmt 6 qseqid sseqid pident length evalue bitscore stitle --out diamond.fmt6 --threads 8
+diamond blastp --query query.fas --db nr --ultra-sensitive --threads 16 --unal 1 --out diamond.fmt6 --outfmt 6 qseqid sseqid pident length evalue bitscore stitle --max-target-seqs 50
 ```
 
 # Problems with large and highly repetitive genome assemblies
