@@ -4,6 +4,8 @@
 
 ## HGT detection workflow using custom protein queries - designed to process 100s or 1000s of genome assemblies
 
+## [Example study available here](https://www.pnas.org/doi/10.1073/pnas.2303844120) 
+
 # Highlights:
 
 - Custom protein queries are used to identify any type of HGT event, e.g. virus-eukaryote (endogenous virus elements or EVEs), virus-virus (gene capture), or others. 
