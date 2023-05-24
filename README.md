@@ -53,6 +53,8 @@ ftp.ncbi.nlm.nih.gov/genomes/all/GCA/001/662/575/GCA_001662575.1_ASM166257v1
 ```
 
 # Notes
+- For processing many assemblies, adding ["-task tblastn-fast"](https://academic.oup.com/bioinformatics/article/23/21/2949/374137) to the tblastn command will improve speed
+- Additionally, selecting the BLOSUM45 matrix with ["-matrix BLOSUM45"](https://en.wikipedia.org/wiki/BLOSUM) may increase sensitivity to very distantly related proteins
 - When processing large numbers of eukaryotic genome assemblies, splitting the workload across multiple jobs is recommended to improve runtime
 - Sequential assembly accessions often have similar size (e.g. same organism submitted as a batch of assemblies), therefore shuffling ftp links will ensure a more similar work burden between jobs
 ```
